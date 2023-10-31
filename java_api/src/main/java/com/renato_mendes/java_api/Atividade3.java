@@ -1,4 +1,5 @@
 package com.renato_mendes.java_api;
+import java.io.Console;
 import java.util.ArrayList;
 import java.util.Scanner;
 import lombok.Getter;
@@ -54,7 +55,6 @@ public class Atividade3 {
 
             for(int i = 0; i < funcionario.length; i++){
                 array[i] = funcionario;
-                
             }    
         }
 
@@ -72,5 +72,26 @@ public class Atividade3 {
             }
             num.sort(null);
             System.out.print(num.get(N-1));
+        }
+
+        public void word(){
+            
+            Scanner ler = new Scanner(System.in);
+            
+            System.out.print("\nDigite uma frase: ");
+            String frase = ler.nextLine();
+            String[] palavra = frase.split(" ");
+
+            if(palavra.length % 2 == 0)
+            {
+                int num = palavra.length / 2;
+                System.out.print(palavra[num]  + " ");
+                System.out.println(palavra[num+1]);
+            }
+           else
+           {
+                int num = palavra.length / 2;
+                System.out.println(palavra[num]);
+           }
         }
 }
