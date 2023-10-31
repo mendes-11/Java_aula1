@@ -30,5 +30,6 @@ public class JavaApiApplication {
 		// Atividade3 atividade = new Atividade3();
 		// atividade.pessoa();
 		// atividade.list();
+		// atividade.word();
 	}
 }
