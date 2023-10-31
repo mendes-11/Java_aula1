@@ -27,14 +27,8 @@ public class JavaApiApplication {
 
 
 		//Exercicio 6;
-		Atividade3 atividade = new Atividade3();
-		atividade.pessoa();
-
-		
-
-
-
-		
+		// Atividade3 atividade = new Atividade3();
+		// atividade.pessoa();
+		// atividade.list();
 	}
-
 }
