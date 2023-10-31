@@ -1,7 +1,6 @@
 package com.renato_mendes.java_api;
-
 import java.util.ArrayList;
-
+import java.util.Scanner;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,10 +17,12 @@ public class Atividade3 {
         }
 
         public class Funcionario extends Pessoa{
+            public int length;
             public Funcionario(int idade, String nome){
                 super(idade, nome);
             }
             int RA;
+
         }
 
         public class Usuario extends Pessoa{
@@ -46,13 +47,30 @@ public class Atividade3 {
             System.out.println("Nome do usuario: " + usuario.nome);
             System.out.println("RA do usuario: " + usuario.turno);
 
-            ArrayList<Usuario> list = new ArrayList();
+            ArrayList<Funcionario> list = new ArrayList();
+            Funcionario[] array = new Funcionario[3];
 
+            list.add(funcionario);
 
-
+            for(int i = 0; i < funcionario.length; i++){
+                array[i] = funcionario;
+                
+            }    
         }
 
+        public void list(){
+            
+            ArrayList<Integer> num = new ArrayList();
 
-    
+            Scanner ler = new Scanner(System.in);
+            System.out.print("\nInforme o tamanho da lista: ");
+            int N = ler.nextInt();
+
+            for(int i = 0; i < N; i++){
+                System.out.print("\nInforme um numero: ");
+                num.add(ler.nextInt());
+            }
+            num.sort(null);
+            System.out.print(num.get(N-1));
+        }
 }
-
